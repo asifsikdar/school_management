@@ -1,0 +1,20 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Models\Admin;
+
+class DatabaseSeeder extends Seeder
+{
+    protected $model = Admin::class;
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        Admin::factory()->create();
+    }
+}
