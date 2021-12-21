@@ -17,7 +17,7 @@ use App\Http\Controllers\MainAdminController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::group(['prefix'=>'admin','middleware'=>['admin:admin']],function(){
